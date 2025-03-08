@@ -1,0 +1,14 @@
+Running 10s test @ http://localhost:5000
+  6 threads and 150 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   502.04ms    1.61ms 514.07ms   90.07%
+    Req/Sec    49.23      2.00    50.00     94.74%
+  2850 requests in 10.02s, 381.30KB read
+Requests/sec:    284.53
+Transfer/sec:     38.07KB
+Thread 1: 2850 requests, 284.53 rps, 502.04ms avg latency
+Thread 2: 2850 requests, 284.53 rps, 502.04ms avg latency
+Thread 3: 2850 requests, 284.53 rps, 502.04ms avg latency
+Thread 4: 2850 requests, 284.53 rps, 502.04ms avg latency
+Thread 5: 2850 requests, 284.53 rps, 502.04ms avg latency
+Thread 6: 2850 requests, 284.53 rps, 502.04ms avg latency

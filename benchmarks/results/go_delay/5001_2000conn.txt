@@ -1,0 +1,14 @@
+Running 10s test @ http://localhost:5001
+  6 threads and 2000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   501.93ms    3.07ms 525.60ms   93.33%
+    Req/Sec   659.83     24.91   667.00     94.74%
+  37962 requests in 10.01s, 4.96MB read
+Requests/sec:   3792.14
+Transfer/sec:    507.35KB
+Thread 1: 37962 requests, 3792.14 rps, 501.93ms avg latency
+Thread 2: 37962 requests, 3792.14 rps, 501.93ms avg latency
+Thread 3: 37962 requests, 3792.14 rps, 501.93ms avg latency
+Thread 4: 37962 requests, 3792.14 rps, 501.93ms avg latency
+Thread 5: 37962 requests, 3792.14 rps, 501.93ms avg latency
+Thread 6: 37962 requests, 3792.14 rps, 501.93ms avg latency
