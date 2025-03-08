@@ -1,0 +1,15 @@
+Running 10s test @ http://localhost:5000
+  6 threads and 20000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    94.90ms  223.20ms   4.23s    98.82%
+    Req/Sec     1.13k   760.02     2.24k    45.52%
+  15061 requests in 10.07s, 4.09MB read
+  Socket errors: connect 16232, read 0, write 0, timeout 0
+Requests/sec:   1496.03
+Transfer/sec:    416.38KB
+Thread 1: 15061 requests, 1496.03 rps, 94.90ms avg latency
+Thread 2: 15061 requests, 1496.03 rps, 94.90ms avg latency
+Thread 3: 15061 requests, 1496.03 rps, 94.90ms avg latency
+Thread 4: 15061 requests, 1496.03 rps, 94.90ms avg latency
+Thread 5: 15061 requests, 1496.03 rps, 94.90ms avg latency
+Thread 6: 15061 requests, 1496.03 rps, 94.90ms avg latency

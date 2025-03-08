@@ -1,0 +1,37 @@
+{
+  "name": "proxy-target-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Workspace for proxy and target servers",
+  "type": "module",
+  "scripts": {
+    "dev:proxy": "pnpm --filter proxy-server dev",
+    "dev:target": "pnpm --filter target-server dev",
+    "dev": "concurrently \"pnpm dev:proxy\" \"pnpm dev:target\"",
+    "build": "pnpm --recursive build",
+    "start:proxy": "pnpm --filter proxy-server start",
+    "start:target": "pnpm --filter target-server start",
+    "start": "concurrently \"pnpm start:proxy\" \"pnpm start:target\"",
+    "start:log": "pnpm start",
+    "start:nolog": "NO_LOG=true pnpm start",
+    "start:delay": "NO_LOG=true DELAY=500 pnpm start",
+    "docker:build:proxy": "docker build -t proxy-server ./proxy-server",
+    "docker:build:target": "docker build -t target-server ./target-server",
+    "docker:build": "pnpm docker:build:proxy && pnpm docker:build:target",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "benchmark": "bash ./benchmarks/run-benchmarks.sh",
+    "lint": "eslint --ext .ts ./*/src",
+    "lint:fix": "eslint --ext .ts ./**/src --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.22.0",
+    "concurrently": "9.1.2",
+    "eslint": "9.22.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.3",
+    "prettier": "3.5.3",
+    "typescript-eslint": "8.26.0"
+  }
+}
